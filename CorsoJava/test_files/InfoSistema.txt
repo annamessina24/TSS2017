@@ -1,0 +1,16 @@
+Tempo in millisecondi: 1483108026504
+Tempo in secondi: 1483108026
+Tempo in ore: 411974 minuti: 27 secondi 6
+Tempo trascorso dal 1 gennaio 1970.
+*****Propriet‡ del sistema*****
+Versione di Java: 1.8.0_111
+Vendor: Oracle Corporation
+Home: /Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre
+Versione: 25.111-b14
+*****Propriet‡ del sistema operativo*****
+Versione: 10.9.5
+Nome: Mac OS X
+Architettura: x86_64
+Separatore di path: :
+Username: Anna
+User Directory: /Users/Anna/Documents/Eclipse Workspace - Java/CorsoJava
