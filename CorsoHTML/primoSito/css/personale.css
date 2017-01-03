@@ -1,0 +1,99 @@
+@charset "utf-8";
+/* CSS Document */
+
+h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 36px;
+	font-style: oblique;
+	font-weight: bolder;
+	font-variant: small-caps;
+	text-transform: lowercase;
+	color: #F3C;
+}
+
+h2 {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 18px;
+	font-style: italic;
+	font-weight: normal;
+	color: #F99;
+}
+
+h3 {
+	font-family: "MS Serif", "New York", serif;
+	font-size: 14px;
+	font-weight: lighter;
+	text-transform: capitalize;
+	color: #F06;
+}
+
+p {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #F0F;
+	text-decoration: line-through;
+}
+
+.rosso {color:#F00;
+	}
+		
+.verde {color:#0F0;
+		font-size:16px;
+		text-decoration: line-through;
+	}
+	
+a {
+	font-family: Verdana, Geneva, sans-serif;
+	color: #6FF;
+	text-decoration: none;
+	}
+	
+a:hover {
+	color: #00F;
+	}
+	
+.rettangolo {
+	height: 300px;
+	width: 400px;
+	background-color: #FCC;
+	margin-top: 50px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	padding: 50px;
+	}
+	
+.quadrato {
+	height: 400px;
+	width: 400px;
+	margin 0 auto;
+	background-color: #C9F;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 18px;
+	}
+
+.quadrato h1 {
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: 24px;
+	font-style: oblique;
+	}
+
+.uno, .due {
+	height: 400px;
+	width: 200px;
+	}
+	
+.uno {
+	background-color: #C0C;
+	float:left;
+	}
+	
+.due {
+	background-color: #C09;
+	float: left;
+	}
+
+.clear {clear:both;
+	}

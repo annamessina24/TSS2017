@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+
+.a, .b, .c{
+	height:auto;
+	margin-bottom:20px;
+}
+
+.sfondoNero{
+	background-color:#000;
+}
+
+.mT100{
+	margin-top:100px;
+}
+
+.mT50{
+	margin-top:5px;
+}
+
+.mT10{
+	margin-top:10px;
+}
+
+.mB100{
+	margin-bottom:100px;
+}
+
+.mB20{
+	margin-bottom:20px;
+}

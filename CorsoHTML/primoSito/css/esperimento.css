@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+
+nav {
+	background-color: #F93;
+	height: 90px;
+	width: 100%;
+}
+
+.corpo {
+	background-color: #396;
+	height: 300px;
+	width: 960px;
+	margin: 50px auto 60px;
+}
+
+.contMicro {
+	background-color: #600;
+	height: auto;
+	min-height: 240px;
+	margin: 0 auto;
+}
+
+.micro {
+	background-color: #3FF;
+	margin: 2px;
+	height: 200px;
+	width: 200px;
+	border: 1px solid #00F;
+	margin: 10px;
+	padding: 9px;
+}
+
+.clear {
+	clear: both;
+}

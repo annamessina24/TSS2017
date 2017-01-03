@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/esperimento.css">
+<!--compatibilita' ie-->
+<!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<title>form</title>
+</head>
+
+<body>
+
+	<section>
+
+		<div class="container">
+        
+        	<form class="modulo">
+            	<label>Nome*:</label><input type="text" name="nome" placeholder="nome" required><br>
+  				<label>Cognome*:</label><input type="text" name="cognome" placeholder="cognome" required><br>
+                <label>Indirizzo:</label><input type="text" name="indirizzo" placeholder="indirizzo"><br>
+                <label>Numero civico:</label><input type="number" placeholder="numero civico"><br>
+                <label>Città:</label><input type="text" name="città" placeholder="città"><br>
+                <label>Età*:</label><input type="number" name="eta" placeholder="devi avere almeno 18 anni" required><br>
+                <label>Numero di telefono:</label><input type="number" name="numerotelefono" placeholder="numero di telefono"><br>
+            	<label>E-mail*:</label><input type="email" name="email" placeholder="scrivi qui la tua email" required><br>
+                <input type="submit" value="Invio" class="invia">
+                <input type="reset" class="resetta">
+            </form>
+       
+        </div>
+
+	</section>
+
+
+</body>
+</html>

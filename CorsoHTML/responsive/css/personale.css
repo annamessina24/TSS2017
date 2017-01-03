@@ -1,0 +1,272 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body {
+	height: 100%;
+}
+
+.wrapper {
+	min-height: 100%;
+	margin: 0 auto -25px; /* the bottom margin is the negative value of the footer's height */
+}
+
+footer, .push {
+	height: 25px; /* '.push' must be the same height as 'footer' */
+}
+
+footer{
+	background-color:#000;
+}
+
+.clear {
+	clear: both;
+}
+
+section {
+	width: 100%;
+	height: auto;
+}
+
+header{
+	height:50px;
+	background-color:#000;
+}
+
+.container {
+	height: auto;
+	width: auto;
+	margin: 0 auto;
+}
+
+.container h1{
+	text-align:center;
+	padding:15px 0;
+}
+
+.mT50 {
+	margin-top: 50px;
+}
+
+.mR15{
+	margin-right:15px;
+}
+
+.mB50 {
+	margin-bottom: 50px;
+}
+
+.mL15{
+	margin-left:15px;
+}
+
+.img-responsive{
+	width:100%;
+}
+
+body {
+ background: red;
+}
+
+.a, .b, .c{
+	margin-top:1%;
+	margin-bottom:1%;
+}
+
+figcaption{
+	width:auto;
+	height:auto;
+	background-color:#000;
+	line-height:40px;
+	font-size:20px;
+	text-align:center;
+	color:#FFF;
+}
+
+.storiella {
+	background-color:#FFF;
+}
+
+.storiella figure{
+	width:33%;
+	height:33%;
+	float:left;
+	margin:1%;
+}
+
+.storiella figcaption{
+	width:auto;
+	height:auto;
+	text-align:center;
+	background-color:#000;
+	color:#FFF;
+}
+
+.storiella hgroup{
+	margin-bottom:20px;
+}
+
+.storiella h1{
+	text-align:left;
+	font-size:24px;
+	line-height:20px;
+	font-weight:bold;
+}
+
+.storiella h2{
+	font-size:16px;
+	line-height:20px;
+	font-weight:bold;
+}
+
+.storiella p{
+	font-size:12px;
+	line-height:18px;
+	text-align:justify;
+	padding:20px;
+}
+
+.d, .e, .f, .g, .l{
+	width:98%;
+	margin:1%;
+	float:left;
+}
+
+.galleria figcaption{
+	width:auto;
+	height:auto;
+	background-color:#000;
+	color:#FFF;
+	font-size:12px;
+	line-height:18px;
+}
+
+
+ 
+@media screen and (min-width: 480px) {
+ body {
+  background: yellow;
+ }
+ 
+ .a, .b{
+	 width:48%;
+	 margin:1%;
+	 float:left;
+ }
+ 
+ .c{
+	 width:98%;
+	 margin:1%;
+	 float:left;
+ }
+ 
+ .d, .e{
+	 width:48%;
+	 margin:1%;
+	 float:left;
+ }
+ 
+ .f{
+	 width:98%;
+	 margin:1%;
+	 float:left;
+ }
+ 
+ .g, .l{
+	 width:48%;
+	 margin:1%;
+	 float:left;
+ }
+ 
+}
+ 
+@media screen and (min-width: 768px) {
+ body {
+  background: green;
+ }
+ 
+  header{
+	width:auto;
+	margin:15px;
+ }
+ 
+ .a, .b{
+	 width:48%;
+	 margin:1%;
+	 float:left;
+ }
+ 
+ .c{
+	 width:98%;
+	 margin:1%;
+	 float:left;
+ }
+ 
+ .d, .e{
+	 width:48%;
+	 margin:1%;
+	 float:left;
+ }
+ 
+ .f, .g, .l{
+	 width:31%;
+	 margin:1%;
+	 float:left;
+ }
+ 
+}
+ 
+@media screen and (min-width: 1024px) {
+ body {
+  background: blue;
+ }
+ 
+ header{
+	width:auto;
+	margin:15px;
+ }
+ 
+ .a, .b, .c{
+	 width:31%;
+	 margin:1%;
+	 float:left;
+ }
+ 
+ .d, .e{
+	 width:48%;
+	 margin:1%;
+	 float:left;
+ }
+ 
+ .f, .g, .l{
+	 width:31%;
+	 margin:1%;
+	 float:left;
+ }
+
+ 
+}
+ 
+@media screen and (min-width: 1200px) {
+ body {
+  background: gray;
+ }
+ 
+ header{
+	width:auto;
+	margin:15px;
+ }
+ 
+  .a, .b, .c{
+	 width:31%;
+	 margin:1%;
+	 float:left;
+ }
+ 
+ .d, .e, .f, .g, .l{
+	 width:18%;
+	 margin:1%;
+	 float:left;
+ }
+ 
+ 
+}

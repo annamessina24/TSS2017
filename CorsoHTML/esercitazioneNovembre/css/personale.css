@@ -1,0 +1,162 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body {
+	height: 100%;
+}
+.wrapper {
+	min-height: 100%;
+	margin: 0 auto -25px; /* the bottom margin is the negative value of the footer's height */
+}
+footer, .push {
+	height: 25px; /* '.push' must be the same height as 'footer' */
+}
+
+footer{
+	background-color:#000;
+}
+
+footer h3{
+	font-family: 'Special Elite', cursive;
+	text-align:center;
+	font-size:10px;
+	color:#FFF;
+	padding:5px;
+}
+
+.clear {
+	clear: both;
+}
+
+section {
+	width: 100%;
+	height: auto;
+}
+
+.centra{
+	padding: 50px 0;
+}
+
+img {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.one-edge-shadow {
+	-webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+}
+
+.corpo {
+	background-color: #333;
+	height: 300px;
+	width: 960px;
+	margin: 60px auto;
+}
+
+.container {
+	height: auto;
+	width: 960px;
+	margin: 0 auto;
+}
+
+.mB50 {
+	margin-bottom: 50px;
+}
+
+.mB20 {
+	margin-bottom: 20px;
+}
+
+.percentuale h1, .percentuale h2{
+    font-family: 'Permanent Marker', cursive;
+	text-align:center;
+	padding:20px;
+	font-size:90px;
+	font-weight:bold;
+}
+
+.percentuale figure{
+	width:23%;
+	margin:1%;
+	float:left;
+	border-radius:5px;
+}
+
+.percentuale img{
+	border-radius:5px;
+}
+
+.percentuale figcaption{
+	font-family: 'Special Elite', cursive;
+	background-color: #000;
+	color:#FFF;
+	text-align: center;
+	padding: 10px;
+	font-size: 12px;
+	border-radius:5px;
+}
+	
+.img-responsive{
+	width:100%;
+}
+
+.grow { 	
+	-webkit-transition: all 1s ease; /* Safari and Chrome */
+	-moz-transition: all 1s ease; /* Firefox */
+	-ms-transition: all 1s ease; /* IE 9 */
+	-o-transition: all 1s ease; /* Opera */
+	transition: all 1s ease;
+}
+
+.grow:hover { 
+	-webkit-transform:scale(1.25); /* Safari and Chrome */
+	-moz-transform:scale(1.25); /* Firefox */
+	-ms-transform:scale(1.25); /* IE 9 */
+	-o-transform:scale(1.25); /* Opera */
+ 	transform:scale(1.25); 
+	}
+
+.crop{
+	overflow:hidden;
+}
+
+.formattaModulo{
+	margin: 50px auto;
+	width: 480px;
+	background-color: #B7E8FF;
+	border-radius:10px;
+	border:1px solid #006F6F;
+	margin:50px auto;
+	padding:7px;
+}
+
+.modulo label, .modulo input {
+	float:left;
+	font-family:Verdana, Geneva, sans-serif;
+}
+
+.modulo label {
+	width:225px;
+	text-align:left;
+	margin:5px;
+	padding:2px;
+}
+
+.modulo input {
+	border:#000 1px solid;
+	width:450px;
+	margin:5px;
+	padding:2px;
+}
+
+.invia {
+	padding:0 !important;
+	margin-left:20px;
+	width:200px !important;
+	font-size:16px;
+	height:30px !important;
+	line-height:24px !important;
+	border-radius:5px !important;
+}
