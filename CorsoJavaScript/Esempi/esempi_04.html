@@ -1,0 +1,49 @@
+<DOCTYPE html />
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+</head>
+<body>
+	
+	<button onclick="incrementa()">Incrementa</button>
+	<div id="test"></div>
+
+	<script type="text/javascript">
+
+		var test = document.getElementById("test");
+		var immagine = "<img src='julietaxlf_01.jpg' alt='immagine dell\'artista Julieta XY' />";
+		//test.innerHTML = immagine;
+
+		var counter = 0;
+
+		var immagini = [
+			"julietaxlf_01.jpg",
+			"julietaxlf_02.jpg",
+			"julietaxlf_03.jpg",
+			"julietaxlf_04.jpg",
+			];
+
+		//alert(immagini.join("\n");
+
+		function incrementa(){
+			if(counter == immagini.length)
+				counter = 0;
+			document.getElementById("miaImg").src = immagini[counter];
+
+			console.log(counter++);
+		}
+
+		var temp = '';
+
+		for(var i=0; i<immagini.length; i++){
+			temp += "<img src='" + immagini[i] + "' alt='immagine dell\'artista Julieta XY' />";
+		};
+
+		test.innerHTML = temp;
+
+	</script>
+
+
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html/>
+<html>
+	<head>
+		<title>Array</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<h1>array in javascript</h1>
+		<button onclick="aggiornaTabella()">Aggiorna</button>
+		<table id='mia_tabella'></table>
+	<ul id="test">
+
+	</ul>
+
+	<script type="text/javascript">
+		
+		var miaTabella = document.getElementById('mia_tabella');
+		var mioUlTest = document.getElementById('test');
+		var testArray = [];
+
+		//primo modo per dichiarare un array in js
+		//var elencoStudenti = new Array();
+			//elencoStudenti[0] = "Balzano Roberto";
+			//alert(elencoStudenti[0]);
+
+		//secondo modo per dichiarare un array in js
+		var elencoStudenti = ['Balzano Roberto', 'Bellia Vittorio', 'Bombaci Simone', 'Canal Monteagudo Monica', 'Marzullo Sergio', 'Mennillo Dario', 'Messina Anna', 'Minozzi Amedeo', 'Morabito Antonio', 'Nicosia Angelo', 'Passannanti Emilio', 'Ruggirello Barbara', 'Sacchet Gabriele', 'Sorrentino Alessandra', 'Triscio Niccolò', 'Vassallo Ferdinando', 'Zilioli Alesssandra'];
+
+		var elencoCorrette = [];
+
+		var elencoErrate = [];
+
+		/**
+		var studenti = [{
+			nome: 'Canal Monteagudo Monica',
+			risposte_corrette: 16,
+			risposte_errate: 5
+		},
+		{
+			nome: 'Morabito Antonio',
+			risposte_corrette: 18,
+			risposte_errate: 6
+		}];
+		*/
+
+		var studenti = [{
+			nome: 'Canal Monteagudo Monica',
+			risposte: [16, 5]
+		},
+		{
+			nome: 'Morabito Antonio',
+			risposte: [18, 6]
+		}];
+
+		var temp = '';
+
+		for(var i=0; i<studenti.length; i++){
+			temp += "<li>" + studenti[i].nome + "</li>";
+		}
+
+		mioUlTest.innerHTML = temp;
+
+		alert(studenti[0].nome + " ha risposto correttamente a " + studenti[0].risposte[0] + " domande!");
+
+		alert(mioUlTest.childNodes.length);
+		//alert(studenti[0].risposte[0]);
+
+		//stampa come se fosse un'unica stringa: è una sorta di toString!
+		console.log(elencoStudenti);
+
+		var lunghezza = elencoStudenti.length;
+
+		//stampa ogni singolo elemento dell'array
+		//for(var i=0; i<lunghezza; i++){
+			//console.log(elencoStudenti[i]);
+		//}
+
+		function aggiornaTabella(){
+
+			var testo = '';
+
+			for(var i=0; i<lunghezza; i++){
+				testo += "<tr>";
+				testo += "<td>";
+				testo += elencoStudenti[i];
+				testo += "</td>";
+				/**
+				testo += "<td>";
+				testo += elencoCorrette[i];
+				testo += "</td>";
+
+				testo += "<td>";
+				testo += elencoErrate[i];
+				testo += "</td>";
+
+				testo += "<td>";
+				testo += (elencoCorrette[i] - elencoErrate[i]);
+				testo += "</td>";
+
+				testo += "<td>";
+				testo += elencoCorrette[i]/(elencoCorrette[i] - elencoErrate[i]);
+				testo += "</td>";
+				*/
+				testo += "</tr>";
+			//console.log(elencoStudenti[i]);
+		};
+
+			miaTabella.innerHTML = testo;
+
+			var righe = document.getElementsByTagName("tr");
+			var listItem = document.getElementsByTagName("li");
+
+			for(var i =0; i<righe.length; i++){
+				console.log(righe[i].innerHTML);
+			};
+
+			//alert(listItem.length);
+			alert(miaTabella.firstChild.innerHTML);
+		};
+
+		testArray["nome"] = "mauro";
+		testArray["cognome"] = "bogliaccino";
+
+		alert(testArray.nome);
+		alert(testArray["nome"]);
+		alert(testArray);
+
+		var t = new Array();
+		t.nome = "roberto";
+		t.nome = "antonio";
+
+		var tt = [[0, 1, 2], ["pippo", "pluto"] ];
+
+		var obj = new Object();
+		obj.nome = 'mauro';
+		obj['cognome'] = "bogliaccino";
+		//alert(obj.nome + obj.cognome);
+		delete obj.cognome;
+		if("nome" in obj)
+			alert(obj.nome + obj.cognome);
+
+		obj.presentazione = myPresentazione;
+
+		function myPresentazione(){
+			alert('ciao da myPres');
+		}
+
+		obj.presentazione();
+
+		obj.ripetiPresentazione = function(){
+			alert('ciao da myPres di nuovo');
+		}
+
+		obj.ripetiPresentazione();
+
+		var altroObj = {
+
+			x: 2,
+			y: 3,
+			calcolaArea: function(){return this.x*this.y}
+
+		};
+
+		alert(altroObj.calcolaArea());
+
+		
+	</script>
+
+
+	</body>
+</html>

@@ -1,0 +1,27 @@
+#container{
+	padding: 10px;
+	background-color: #FFF;
+	width: 360px;
+	height: 360px;
+}
+
+#binario{
+	height: 100px;
+	width: 360px;
+	background: url('img/binario.jpg');
+	background-repeat: repeat-y;
+	border-bottom: 2px solid black; 
+}
+
+#treno{
+	height: 70px;
+	width: 100px;
+	border: dotted 0px red;
+	position: relative;
+	left: 0px;
+	top: 17px;
+}
+
+#treno img{
+	width: 100%;
+}

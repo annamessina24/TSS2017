@@ -1,0 +1,34 @@
+<!DOCTYPE html />
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Cambia immagini</title>
+	
+</head>
+<body>
+	<div id="container">
+
+		<img src="img/lampadina_on.jpg" class="immagini" id="img1" />
+
+		<br>
+		<button onclick="interruttore()">Accendi</button>
+
+
+	</div>	
+
+
+
+	<script>
+		var lampadina = document.getElementById("img1");
+		function interruttore () {
+			
+			if (lampadina.src.indexOf("_off") > -1)
+			//alert("è spenta");
+			lampadina.src = "img/lampadina_on.jpg";
+			else
+			lampadina.src = "img/lampadina_off.jpg";
+			// alert("è accesa");
+		}
+	</script>
+</body>
+</html>

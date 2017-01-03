@@ -1,0 +1,53 @@
+<!DOCTYPE html />
+<html lang="en">
+<head>
+	<title>Oggetti</title>
+	<meta charset="utf-8" />
+	<script type="text/javascript">
+
+		function stampaInfo(){
+			document.write("Verso: " + this.verso + "<br/>");
+			document.write("Colore: " + this.colore + "<br/>");
+			document.write("Nome: " + this.nome + "<br/>");
+		}
+
+		//NB - sempre meglio dichiarare un funzione PRIMA di richiamarla
+		//sono disponibili modi per fare il contrario, ma è meglio evitarli perché non sono molto efficienti
+		function Gatto(nome, colore){ //creo la classe Gatto
+			this.nome = nome;
+			this.verso="miao";
+			this.colore = colore;
+			this.cartaIdentita = function(){
+				document.write("Verso: " + this.verso + "<br/>");
+				document.write("Colore: " + this.colore + "<br/>");
+				document.write("Nome: " + this.nome + "<br/>");
+			};
+		}
+
+		
+
+	</script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	
+	<h1></h1>
+
+	<p>
+
+		<script type="text/javascript">
+
+			var mioGatto = new Gatto("Mau", "rosso"); //creo un oggetto di tipo Gatto
+
+			//document.write(mioGatto.nome);
+			//document.write(mioGatto.colore);
+
+			document.write(mioGatto.cartaIdentita());
+
+		</script>
+
+
+	</p>	
+
+</body>
+</html>

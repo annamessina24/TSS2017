@@ -1,0 +1,59 @@
+<!DOCTYPE html />
+<html lang="en">
+<head>
+	<title>Oggetti 6</title>
+	<meta charset="utf-8" />
+	<script type="text/javascript">
+
+		function Animale(){
+			var padrone = "Mauro";
+			var genere = undefined;
+
+			this.setPadrone = function(chi){
+				padrone = chi;
+			};
+			this.getPadrone = function(){
+				return padrone;
+			};
+			this.setGenere = function(gen){
+				genere = gen;
+			};
+			this.getGenere = function(){
+				return genere;
+			};
+		};
+
+		//una specie di ereditarietà in js
+		function Gatto(){
+			Gatto.prototype = new Animale();
+			Gatto.prototype.constructor = Gatto;
+			Gatto.prototype.emit = function emit(){
+				return "miao";
+			};
+		};
+
+	</script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	
+	<h1></h1>
+
+	<p>
+
+		<script type="text/javascript">
+
+			var mioGatto = new Gatto;
+
+			document.write(mioGatto.getPadrone());
+			document.write("<br/>");
+			document.write(mioGatto.emit());
+			document.write("<br/>");
+
+		</script>
+
+
+	</p>	
+
+</body>
+</html>

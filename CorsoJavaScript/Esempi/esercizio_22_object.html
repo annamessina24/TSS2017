@@ -1,0 +1,44 @@
+<!DOCTYPE html />
+<html lang="en">
+<head>
+	<title>Oggetti</title>
+	<meta charset="utf-8" />
+	<script type="text/javascript">
+
+		//NB - sempre meglio dichiarare un funzione PRIMA di richiamarla
+		//sono disponibili modi per fare il contrario, ma è meglio evitarli perché non sono molto efficienti
+		function stampaInfo(){
+			document.write("Verso: " + gatto.verso + "<br/>");
+			document.write("Colore: " + gatto.colore + "<br/>");
+			document.write("Nome: " + gatto.nome + "<br/>");
+		}
+
+		var gatto = new Object();
+		gatto.verso = "miao";
+		gatto.colore = "rosso";
+		gatto.nome = "mau";
+		//pedigree contiene una chiamata ad una funzione
+		//praticamente è come mettere un metodo dentro all'oggetto gatto
+		gatto.pedigree = stampaInfo;
+		//alert(gatto.verso);
+
+	</script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	
+	<h1></h1>
+
+	<p>
+
+		<script type="text/javascript">
+
+			gatto.pedigree();
+
+		</script>
+
+
+	</p>	
+
+</body>
+</html>

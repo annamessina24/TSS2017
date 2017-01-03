@@ -1,0 +1,48 @@
+<!DOCTYPE html />
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Tabelline!</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	
+	<h1>Impariamo le tabelline</h1>
+	<button onclick="creaTabelline()">gligga qua</button>
+	<table id='mie_tabelline'></table>
+
+
+	<script type="text/javascript">
+
+		var mieTabelline = document.getElementById('mie_tabelline');
+
+		var cella = '';
+
+		function creaTabelline(){
+
+				for(var i=1; i<10; i++){
+
+					cella += "<tr>";
+
+					for(var j=1; j<=10; j++){
+
+						if((i*j)%5==0)
+							cella += "<td style='color: red'>";
+						else
+							cella += "<td>";
+							cella += i*j;
+							cella += "</td>";
+						
+					};
+
+					cella += "</tr>";
+
+				};
+
+			mieTabelline.innerHTML = cella;
+
+		}
+
+	</script>
+</body>
+</html>

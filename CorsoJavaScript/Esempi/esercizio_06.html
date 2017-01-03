@@ -1,0 +1,27 @@
+<DOCTYPE html/>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Const</title>
+	</head>
+	<body>
+
+		<script type="text/javascript">
+			const LANGUAGE = "Italian";
+			const CODICE_FISCALE = "123abc456def";
+
+		</script>
+
+		<script type="text/javascript">
+			document.write("Language is: " + LANGUAGE + "<br/>");
+			document.write("Codice fiscale is: " + CODICE_FISCALE + "<br/>");
+			document.write(typeof CODICE_FISCALE, "<br/>");
+			CODICE_FISCALE = "pippo"; //errore!!!
+
+			//a causa dell'errore, tutta la roba dopo non verrà eseguita! il codice si rompe! D:
+			document.write(CODICE_FISCALE, "<br/>");
+			alert('vvv');
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,48 @@
+<DOCTYPE html />
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>TO-DO List</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+	<div id="container">
+		<h1>TO-DO List</h1>
+
+		<div>
+			<input type="text" id="inserisciItem">
+			<button id="btnInserisci">Aggiungi</button>
+		</div>	
+
+		<ul id="todoList">
+
+
+		</ul>
+
+	</div>
+	
+
+
+	<script>
+		var item = document.getElementById("inserisciItem");
+		var btnInsert = document.getElementById("btnInserisci");
+		var toDoList = document.getElementById("todoList");
+
+		btnInsert.addEventListener("click", function(){
+			//alert('Hai cliccato?');
+			if(item.value!=""){
+				var temp = "<li>" + item.value + "</li>";
+				toDoList.innerHTML += temp;
+				pulisciCampo();
+			}
+			
+		});
+
+		function pulisciCampo(){
+			item.value = "";
+		}
+
+	</script>
+</body>
+</html>

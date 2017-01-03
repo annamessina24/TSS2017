@@ -1,0 +1,47 @@
+<!DOCTYPE html />
+<html lang="en">
+<head>
+	<title>Oggetti 4</title>
+	<meta charset="utf-8" />
+	<script type="text/javascript">
+
+		function Libro(titolo, autore){
+			this.titolo = titolo;
+			this.autore = autore;
+		};
+
+	</script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	
+	<h1></h1>
+
+	<p>
+
+		<script type="text/javascript">
+
+			var libro1 = new Libro("Essere o avere", "Erich Fromm");
+			var libro2 = new Libro("Il Signore degli Anelli", "J. R. R. Tolkien");
+
+			//prototype non è un metodo, ma una proprietà
+			//può essere usata sia sui "miei" oggetti custom che sugli oggetti di sistema
+			Object.prototype.lingua = "Italiano";
+
+			Libro.prototype.editore = "Einaudi";
+			Libro.prototype.pubblicazione = new Date();
+
+			libro1.editore = "Mondadori";
+			//libro2.editore = "Bompiani";
+
+			document.write(libro1.titolo + ", " + libro1.editore + ", " + libro1.pubblicazione + ", " + libro1.lingua);
+			document.write("<br/>");
+			document.write(libro2.titolo + ", " + libro2.editore + ", " + libro2.pubblicazione + ", " + libro2.lingua);
+
+		</script>
+
+
+	</p>	
+
+</body>
+</html>
