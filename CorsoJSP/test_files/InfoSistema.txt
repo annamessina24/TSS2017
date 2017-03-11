@@ -1,0 +1,16 @@
+Tempo in millisecondi: 1482162552390
+Tempo in secondi: 1482162552
+Tempo in ore: 411711 minuti: 49 secondi 12
+Tempo trascorso dal 1 gennaio 1970.
+*****Proprietà del sistema*****
+Versione di Java: 1.8.0_101
+Vendor: Oracle Corporation
+Home: C:\Program Files\Java\jre1.8.0_101
+Versione: 25.101-b13
+*****Proprietà del sistema operativo*****
+Versione: 10.0
+Nome: Windows 10
+Architettura: amd64
+Separatore di path: ;
+Username: sviluppo
+User Directory: Z:\messinaAnna\Eclipse\CorsoJava
