@@ -1,0 +1,117 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body{
+  height: 100%;
+}
+
+.mT100{
+	margin-top: 100px;
+}
+
+.mB100{
+	margin-bottom: 100px;
+}
+
+.mT50{
+	margin-top: 50px;
+}
+
+.mB50{
+	margin-bottom: 50px;
+}
+
+.mT20{
+	margin-top: 20px;
+}
+
+.mB20{
+	margin-bottom: 20px;
+}
+
+.center-block {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+.recensione h1 {
+	font-size: 24px;
+	line-height: 20px;
+	font-weight: bold;
+    color: white;
+}
+
+.recensione h2 {
+	font-size: 20px;
+	margin-bottom: 20px;
+    color: white;
+}
+
+.recensione p {
+	font-size: 12px;
+	line-height: 18px;
+	text-align: justify;
+	margin-bottom: 20px;
+    color: white;
+}
+	
+.recensione figure {
+	width:50%;
+	height:auto;
+	float:left;
+	margin-right:20px;
+	margin-bottom:10px;
+}
+	
+.recensione figcaption {
+	background-color: #000;
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+}
+	
+.recensione figcaption h2 {
+	color: #FFF;
+}
+
+.alignCenter{
+    text-align: center;
+    display: block;
+}
+
+.tourList, .tourItem{
+    overflow: hidden;
+    clear: both;
+    position: relative;
+    margin-bottom: 1.5%;
+}
+
+.tourItem{
+    background-color: white;
+    font-size: 17.4286px;
+}
+
+.information{
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+}
+
+.date, .description, .venue, .location{
+    display: inline-block;
+    text-align: center;
+}
+
+.date{
+    color: #DE5E60;
+    font-weight: bold;
+}
+
+.description{
+    font-weight: bold;
+}
